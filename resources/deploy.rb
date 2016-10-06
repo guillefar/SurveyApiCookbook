@@ -6,6 +6,11 @@ property :service_name, String, required: true, name_property: true
 property :run_cmd, String, default: '/usr/local/bin/npm start'  
 property :run_environment, Hash, default: {}
 
+
+#   deploy attributes
+default['opsworks-surveyapp']['basedir'] = '/opt'  
+default['opsworks-surveyapp']['run-cmd'] = 'npm start'  
+
 default_action :run
 
 action :run do  
