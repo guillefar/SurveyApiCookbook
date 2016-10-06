@@ -1,4 +1,4 @@
-name 'surveyapi'
+name 'surveysapi'
 maintainer 'guillofar'
 maintainer_email 'guillofar@gmail.com'
 license 'Apache 2.0'

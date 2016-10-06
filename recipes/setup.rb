@@ -1,6 +1,6 @@
 
 
-surveyapp_setup 'surveyapp' do  
-  nodejs_version node['opsworks-surveyapp']['nodejs']['version']
-  nodejs_checksum node['opsworks-surveyapp']['nodejs']['checksum']
+surveysapi_setup 'surveysapi' do  
+  nodejs_version node['opsworks-surveysapi']['nodejs']['version']
+  nodejs_checksum node['opsworks-surveysapi']['nodejs']['checksum']
 end  

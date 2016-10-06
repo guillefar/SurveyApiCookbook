@@ -8,8 +8,8 @@ property :run_environment, Hash, default: {}
 
 
 #   deploy attributes
-default['opsworks-surveyapp']['basedir'] = '/opt'  
-default['opsworks-surveyapp']['run-cmd'] = 'npm start'  
+default['opsworks-surveysapi']['basedir'] = '/opt'  
+default['opsworks-surveysapi']['run-cmd'] = 'npm start'  
 
 default_action :run
 
@@ -37,7 +37,7 @@ action :run do
 
   template "/etc/init/#{service_name}.conf" do
     source 'upstart.conf.erb'
-    cookbook 'node-app'
+    cookbook 'surveysapi'
     mode '0600'
     variables(
       name: service_name,
