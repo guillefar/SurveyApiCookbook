@@ -9,8 +9,8 @@ issues_url 'https://github.com/guillefar/SurveysApiCookbook/issues' if respond_t
 version '0.0.1'
 
 depends 'yum-epel'
-depends 'build-essential'
 depends 'dmg'
+depends 'build-essential'
 depends 'ark'
 depends 'apt', '>= 2.9.1'
 depends 'homebrew'
