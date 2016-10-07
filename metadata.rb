@@ -1,4 +1,4 @@
-name 'surveysapi'
+name 'opsworks-surveysapi'
 maintainer 'guillofar'
 maintainer_email 'guillofar@gmail.com'
 license 'Apache 2.0'
@@ -25,6 +25,6 @@ depends 'git'
 end
 
 
-recipe "surveysapi::deploy", "For deployment"
-recipe "surveysapi::setup", "For setup"
+recipe "opsworks-surveysapi::deploy", "For deployment"
+recipe "opsworks-surveysapi::setup", "For setup"
 
