@@ -18,9 +18,13 @@ depends 'nodejs'
 depends 'git'
 
 
+
+
 %w(debian ubuntu centos redhat scientific oracle amazon smartos mac_os_x).each do |os|
   supports os
 end
 
 
+recipe "surveysapi::deploy", "For deployment"
+recipe "surveysapi::setup", "For setup"
 
